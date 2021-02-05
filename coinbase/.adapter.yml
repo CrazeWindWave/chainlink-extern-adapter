@@ -1,1 +1,13 @@
-
+name: mycoinbase
+description: An example adapter that does something.
+node_identifier: mycoinbase
+platforms:
+  - Docker
+  - AWS Lambda
+  - GCP Functions
+data_sources:
+  - name: mycoinbase
+    url: https://api.coinbase.com/price
+parameters:
+  - base
+  - quote
